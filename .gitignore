@@ -1,0 +1,7 @@
+# Sistema
+.DS_Store
+.claude/
+
+# Backups locais (não vão pro deploy)
+_fallback.standalone.html
+index.previous.html
