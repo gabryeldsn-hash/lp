@@ -234,7 +234,8 @@
 .rv-rail.is-on:hover .rv-track,.rv-rail.is-on:focus-within .rv-track{animation-play-state:paused}
 .rv-set{display:flex;gap:24px;padding:0 12px}
 @keyframes rv-anda{to{transform:translateX(-50%)}}
-.rv{flex:0 0 clamp(290px,27vw,410px);min-height:clamp(440px,34vw,500px);display:flex;flex-direction:column;margin:0;padding:clamp(28px,3vw,48px);
+/* largura explícita além da base flex: sem ela o Safari mede a faixa como se cada texto coubesse numa linha só e o carrossel passa minutos mostrando vazio */
+.rv{flex:0 0 clamp(290px,27vw,410px);width:clamp(290px,27vw,410px);min-height:clamp(440px,34vw,500px);display:flex;flex-direction:column;margin:0;padding:clamp(28px,3vw,48px);
   border:1px solid var(--line);border-radius:20px;background:linear-gradient(180deg,#0C1224,#090D1B)}
 .rv-top{display:flex;align-items:center;gap:14px}
 .rv-score{margin:0;font-size:var(--fs-14);color:var(--ink-3)}
